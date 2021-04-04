@@ -1,2 +1,0 @@
-# SpamBot
-idk
