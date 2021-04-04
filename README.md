@@ -1,2 +1,2 @@
 # SpamBot
-A simpple program that can spawn big chunks of text
+A simple program that can spawn big chunks of text
