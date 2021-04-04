@@ -9,8 +9,6 @@ user = input("Choose Spam: "
 if user != '1' and user != '2': 
     print('[' + user + ']' + " Is an INVALID Input")
     time.sleep(5)
-    import module.py
-    time.sleep(1)
     sys.exit()
 
 number = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
