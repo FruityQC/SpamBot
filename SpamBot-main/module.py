@@ -2,41 +2,32 @@ import pyautogui
 import time
 import sys
 
-a = input("Choose Spam: "
+user = input("Choose Spam: "
           "[1]Bee_Movie "
           "[2]Baby-Justin_Be-beer ")
 
-print("10")
-time.sleep(1)
-print("9")
-time.sleep(1)
-print("8")
-time.sleep(1)
-print("7")
-time.sleep(1)
-print("6")
-time.sleep(1)
-print("5")
-time.sleep(1)
-print("4")
-time.sleep(1)
-print("3")
-time.sleep(1)
-print("2")
-time.sleep(1)
-print("1")
-time.sleep(1)
+if user != '1' and user != '2': 
+    print('[' + user + ']' + " Is an INVALID Input")
+    time.sleep(1)
+    import module.py
+    sys.exit()
+
+number = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+for x in number:
+    print(x)
+    time.sleep(1)
+
 print("Spamming...Press CTRL + C in this window to Stop everything")
 
 
-if a == "1":
-    wrd = open("Texts Files/bees", 'r')
+if user == "1":
+    wrd = open("bees", 'r')
     for word in wrd:
         pyautogui.typewrite(word)
         pyautogui.press("enter")
 else:
-    if a == "2":
-        wrd = open("Texts Files/baby", 'r')
+    if user == "2":
+        wrd = open("baby", 'r')
         for word in wrd:
             pyautogui.typewrite(word)
             pyautogui.press("enter")
