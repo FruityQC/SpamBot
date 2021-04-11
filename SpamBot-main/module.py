@@ -26,13 +26,13 @@ def start():
 
 
     if user == "1":
-        wrd = open("bees", 'r')
+        wrd = open("SpamBot-main/bees.txt", 'r')
         for word in wrd:
             pyautogui.typewrite(word)
             pyautogui.press("enter")
     else:
         if user == "2":
-            wrd = open("baby", 'r')
+            wrd = open("SpamBot-main/baby", 'r')
             for word in wrd:
                 pyautogui.typewrite(word)
                 pyautogui.press("enter")
