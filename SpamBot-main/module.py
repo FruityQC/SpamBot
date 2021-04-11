@@ -1,8 +1,13 @@
 import pyautogui
 import time
 import sys
+import os
+
 
 def start():
+
+    os.system("cls")
+
     user = input("Choose Spam: "
             "[1]Bee_Movie "
             "[2]Baby-Justin_Be-beer ")
