@@ -26,7 +26,7 @@ def start():
 
 
     if user == "1":
-        wrd = open("SpamBot-main/bees.txt", 'r')
+        wrd = open("SpamBot-main/bees", 'r')
         for word in wrd:
             pyautogui.typewrite(word)
             pyautogui.press("enter")
